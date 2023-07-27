@@ -1,0 +1,5 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "./macro_custom_coding/Cargo.toml"
+  ]
+}
