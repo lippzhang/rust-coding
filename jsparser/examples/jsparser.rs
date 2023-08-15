@@ -2,6 +2,5 @@
 
 fn main() {
   println!("test start");
-
 }
 
