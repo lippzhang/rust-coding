@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 my-lib = { path = "../my-lib" }
+log = "0.4"
+env_logger = "0.9"
+structopt = "0.3"
