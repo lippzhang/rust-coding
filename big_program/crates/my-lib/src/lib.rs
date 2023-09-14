@@ -1,12 +1,20 @@
 use std::path::Path;
+use std::fs;
 use log::debug;
+
+pub mod error;
+use error::Error;
 
 pub struct Module {}
 
 impl Module {
     pub fn from_file<T: AsRef<Path>>(path: T) -> Result<Self, std::io::Error> {
         debug!("Loading wasm file from {:?}", path.as_ref());
-        Ok(Self{})
+        let bytes = fs::read(path.as_ref()).map_err(|e| Error::FileNotReadable(path.as_ref().to_path_buf(), e.to_string()))?;
+        Self::new(&bytes)
+    }
+    pub fn new(bytes: &[u8]) -> Result<Self,> {
+
     }
 }
 
