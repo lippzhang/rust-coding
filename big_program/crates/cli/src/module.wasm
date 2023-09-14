@@ -1,0 +1,1 @@
+asfdss@index('./*', f => `export { default as ${f.name} } from '${f.path}'`)
