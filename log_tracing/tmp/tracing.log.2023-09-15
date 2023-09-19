@@ -1,0 +1,8 @@
+2023-09-15T10:33:33.580 TRACE test_trace{n=33}: tracing2: trace2: test_trace answer=42
+2023-09-15T10:33:33.580 TRACE test_trace{n=33}: tracing2: trace1: test_trace answer=42
+2023-09-15T10:33:33.580  INFO test_trace{n=33}: tracing2: info1: test_trace answer=42
+2023-09-15T10:33:33.580 TRACE tracing2: tracing-trace
+2023-09-15T10:33:33.580 DEBUG tracing2: tracing-debug
+2023-09-15T10:33:33.580  INFO tracing2: tracing-info
+2023-09-15T10:33:33.580  WARN tracing2: tracing-warn
+2023-09-15T10:33:33.580 ERROR tracing2: tracing-error
